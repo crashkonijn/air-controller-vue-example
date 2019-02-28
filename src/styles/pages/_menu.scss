@@ -1,0 +1,31 @@
+.air-page {
+  &--menu {
+    .air-button {
+      float: left;
+      width: 25vw;
+      line-height: 50vh;
+
+      &--buttons {
+        background-color: #009688;
+      }
+      &--swipe {
+        background-color: #4caf50;
+      }
+      &--pan {
+        background-color: #cddc39;
+      }
+      &--motion {
+        background-color: #ba68c8;
+      }
+      &--profile {
+        background-color: #81c784;
+      }
+      &--unclaim {
+        background-color: #ff5722;
+      }
+      &--custom-data {
+        background-color: #78c0ff;
+      }
+    }
+  }
+}

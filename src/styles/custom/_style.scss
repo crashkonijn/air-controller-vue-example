@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+
+html, body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+button, a, h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h1 {
+  line-height: 100%;
+  @extend .anchor;
+  @extend .anchor--center-center;
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.air-button--back {
+  left: 0;
+  width: 25vw;
+  background-color: #ff6775;
+  position: fixed;
+  line-height: 10vh !important;
+  height: 10vh !important;
+  z-index: 99 !important;
+}

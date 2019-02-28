@@ -1,0 +1,15 @@
+.air-page {
+  &--axis {
+    background-color: #af6c92;
+
+    .air-position {
+      width: 100vh;
+      height: 100vh;
+    }
+
+    .air-axis {
+      width: 33vh;
+      height: 33vh;
+    }
+  }
+}
