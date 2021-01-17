@@ -1,0 +1,35 @@
+﻿syntax = "proto3";
+package Platform.AirConsole.ProtoMessages;
+
+message Position {
+  float x = 1;
+  float y = 2;
+}
+
+message Planet {
+  int32 id = 1;
+  string color = 2;
+  Position position = 3;
+  float size = 4;
+  int32 ships = 5;
+}
+
+message Galaxy {
+  repeated Planet planets = 1;
+}
+
+message Action {
+  repeated int32 selectedPlanets = 1;
+  int32 target = 2;
+}
+
+message Actions {
+  repeated Action history = 1;
+  Action current = 2;
+}
+
+message RoundStats {
+  int32 planets = 1;
+  int32 ships = 2;
+  bool died = 3;
+}

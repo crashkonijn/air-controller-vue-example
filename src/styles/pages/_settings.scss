@@ -1,0 +1,37 @@
+.air-page {
+  &--settings {
+    background-color: black;
+
+    .air-button {
+      &--start-game {
+        width: 50vw;
+        background-color: #4ca7af;
+      }
+
+      &--add-computer {
+        width: 20vh;
+        background-color: #4caf50;
+        right: 10vh;
+      }
+
+      &--remove-computer {
+        width: 20vh;
+        background-color: #cb4d3c;
+        left: 10vh;
+      }
+
+      height: 20vh;
+      bottom: 10vh;
+    }
+
+    .air-profile-image {
+      top: 10vh;
+
+      width: 50vh;
+      height: 50vh;
+
+      border-width: 5px;
+      border-style: solid;
+    }
+  }
+}

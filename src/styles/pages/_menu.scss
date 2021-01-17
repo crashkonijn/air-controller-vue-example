@@ -1,31 +1,22 @@
 .air-page {
   &--menu {
-    .air-button {
-      float: left;
-      width: 25vw;
-      line-height: 50vh;
+    background-color: black;
 
-      &--buttons {
-        background-color: #009688;
-      }
-      &--swipe {
-        background-color: #4caf50;
-      }
-      &--pan {
-        background-color: #cddc39;
-      }
-      &--motion {
-        background-color: #ba68c8;
-      }
-      &--profile {
-        background-color: #81c784;
-      }
-      &--unclaim {
-        background-color: #ff5722;
-      }
-      &--custom-data {
-        background-color: #78c0ff;
-      }
+    .air-button {
+      
+    }
+
+    .air-profile-image {
+      width: 50vh;
+      height: 50vh;
+
+      border-width: 5px;
+      border-style: solid;
+    }
+
+    h1 {
+      width: 100vw;
+      padding-bottom: 20vh;
     }
   }
 }

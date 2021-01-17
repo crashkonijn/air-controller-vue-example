@@ -1,0 +1,17 @@
+﻿.air-page--gameplayResult {
+  background-color: #000000;
+
+  h1 {
+    line-height: 8rem;
+
+    span {
+      &.good {
+        color: #4caf50;;
+      }
+
+      &.bad {
+        color: #cb4d3c;
+      }
+    }
+  }
+}

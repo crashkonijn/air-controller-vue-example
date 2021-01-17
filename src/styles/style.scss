@@ -3,11 +3,17 @@
 @import "custom/style";
 @import "pages/loading";
 @import "pages/menu";
-@import "pages/claim";
-@import "pages/buttons";
-@import "pages/profile";
-@import "pages/swipe";
-@import "pages/pan";
-@import "pages/motion";
-@import "pages/full";
-@import "pages/axis";
+@import "pages/settings";
+@import "pages/gameplay";
+@import "pages/gameplay-viewing";
+@import "pages/gameplay-result";
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('../fonts/3Dventure.ttf');
+  //src: url('../fonts/Fipps-Regular.otf');
+}
+
+h1 {
+  font-family: myFirstFont;
+}

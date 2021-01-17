@@ -18,13 +18,19 @@
     "build": "vue-cli-service build",
     "dev": "vue-cli-service build --mode development",
     "watch": "vue-cli-service build --watch",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "unity": "npm run dev && npm run unity-copy",
+    "unity-build": "npm run build && npm run unity-copy",
+    "unity-copy": "rename .\\dist\\index.html air-controller.html && xcopy .\\dist .\\..\\Unity\\StarDominator\\Assets\\WebGLTemplates\\AirConsole /E /Y",
+    "proto": "protoc -I./ --csharp_out=./../Unity/StarDominator/Assets/Platform/AirConsole/ProtoMessages/ ./public/messages/*.proto"
   },
   "dependencies": {
-    "air-controller-vue": "^1.0.0",
+    "air-controller-vue": "^1.2.1",
     "nipplejs": "^0.8.1",
+    "protobufjs": "^6.9.0",
     "victor": "^1.1.0",
     "vue": "^2.6.7",
+    "vue-async-computed": "^3.8.2",
     "vue2-hammer": "^2.1.2",
     "vuex": "^3.1.0"
   },
@@ -35,7 +41,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.14.0",
     "sass-loader": "^7.1.0",
     "style-resources-loader": "^1.2.1",
     "vue-cli-plugin-style-resources-loader": "^0.1.3",
