@@ -5,7 +5,7 @@
             <circle :cx="getScreenXPos(planet.position.x)" :cy="getScreenYPos(planet.position.y)" :r="getScreenSize(planet.size)" :stroke="planet.color" stroke-width="3" :fill="planetColor(planet)" v-for="(planet) in galaxy.planets" :key="'circle' + planet.id" :id="'planet' + planet.id" @click="onPlanetClick(planet)"/>
             <text :x="getScreenXPos(planet.position.x)" :y="getScreenYPos(planet.position.y)" fill="white" dominant-baseline="middle" text-anchor="middle" v-for="(planet) in galaxy.planets" :key="'text' + planet.id" @click="onPlanetClick(planet)">{{ planet.ships }}</text>
         </svg>
-        <countdown :duration="4"></countdown>
+        <countdown :duration="6.5"></countdown>
     </div>
 </template>
 

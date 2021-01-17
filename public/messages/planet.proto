@@ -32,4 +32,7 @@ message RoundStats {
   int32 planets = 1;
   int32 ships = 2;
   bool died = 3;
+  bool dominator = 4;
+  int32 position = 5;
+  int32 positionChange = 6;
 }

@@ -19,6 +19,9 @@
             <air-page name="gameplayResult">
                 <gameplay-result-page></gameplay-result-page>
             </air-page>
+            <air-page name="gameOver">
+                <gameover-page></gameover-page>
+            </air-page>
         </air-controller>
     </div>
 </template>
@@ -30,10 +33,12 @@
     import SettingsPage from "./pages/settings-page";
     import GameplayViewingPage from "./pages/gameplay-viewing-page";
     import GameplayResultPage from "./pages/gameplay-result-page";
+    import GameoverPage from "./pages/gameover-page";
 
     export default {
         name: 'app',
         components: {
+            GameoverPage,
             GameplayViewingPage,
             GameplayResultPage,
             SettingsPage,
